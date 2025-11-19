@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio Moussa Sow</title>
 <style>
+    html { scroll-behavior: smooth; }
     body { font-family: 'Arial', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#222; }
     a { text-decoration:none; color:#004080; }
     a:hover { text-decoration:underline; }
@@ -26,8 +27,9 @@
 
     /* Projets */
     .projets { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
-    .carte { background:white; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); width:250px; text-align:center; }
-    .carte img { width:100%; border-radius:5px; }
+    .carte { background:white; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); width:250px; text-align:center; transition: transform 0.3s, box-shadow 0.3s; }
+    .carte:hover { transform: translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.2); }
+    .carte img { width:100%; border-radius:5px; margin-bottom:10px; }
 </style>
 </head>
 <body>
@@ -44,12 +46,12 @@
     </p>
 </header>
 
-<section>
+<section id="about">
     <h2>À propos de moi</h2>
     <p>Étudiant en Master 1 Systèmes, Réseaux et Télécommunications à l’École Supérieure Polytechnique, passionné par la cybersécurité et le cloud. Titulaire d’une licence en Mathématiques après deux années de classes préparatoires en Mathématiques, Physique et Informatique. Je combine rigueur scientifique et compétences techniques pour concevoir et gérer des projets dans les réseaux et systèmes informatiques.</p>
 </section>
 
-<section>
+<section id="certifications">
     <h2>Certifications</h2>
     <ul>
         <li>Cisco CCNA (200-301) – Décembre 2025</li>
@@ -59,7 +61,7 @@
     </ul>
 </section>
 
-<section>
+<section id="skills">
     <h2>Compétences Techniques</h2>
     <ul>
         <li><strong>Réseaux :</strong> TCP/IP, VLAN, OSPF, BGP, NAT, ACL, Cisco IOS, GNS3, Packet Tracer, Wireshark, pfSense</li>
@@ -70,7 +72,7 @@
     </ul>
 </section>
 
-<section>
+<section id="experience">
     <h2>Expériences & Projets</h2>
     <ul>
         <li><strong>Responsable Informatique – Multiservice Le Binaire MB01 (2022–2025)</strong> : Administration LAN/WAN (30 postes), routeurs/switchs Cisco, firewall pfSense, VPN site-to-site, monitoring Wireshark, gestion incidents cybersécurité</li>
@@ -81,24 +83,26 @@
     </ul>
 </section>
 
-<section>
+<section id="projects">
     <h2>Projets Académiques & Techniques</h2>
     <div class="projets">
         <div class="carte">
             <img src="heat-equation.png" alt="Simulation de l'équation de la chaleur">
             <h3>Simulation de l'équation de la chaleur</h3>
             <p>Projet académique : résolution de l'équation de la chaleur en 1D (FTCS)</p>
+            <a href="https://github.com/SHERLOCKSOW/Heat-Equation-1D-FTCS" class="btn" target="_blank">Voir sur GitHub</a>
         </div>
 
         <div class="carte">
             <img src="sudoku.png" alt="Jeu interactif Sudoku">
             <h3>Jeu interactif Sudoku</h3>
             <p>Projet technique : création d'un jeu interactif Sudoku en Python/Colab</p>
+            <a href="https://github.com/SHERLOCKSOW/Interactive-Colab-Sudoku" class="btn" target="_blank">Voir sur GitHub</a>
         </div>
     </div>
 </section>
 
-<section>
+<section id="languages">
     <h2>Langues & Engagements</h2>
     <p><strong>Langues :</strong> Français (excellent), Anglais (courant technique), Japonais (intermédiaire), Wolof/Peulh (natif)</p>
     <p><strong>Engagements :</strong> Président Club d’Échecs USSEIN, Reboisement 100+ arbres, Santé mentale étudiante</p>
