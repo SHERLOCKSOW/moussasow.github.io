@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-  <title>Portfolio de Moussa</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Moussa Sow</title>
+<style>
+    body { font-family: 'Arial', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#222; }
+    a { text-decoration:none; color:#004080; }
+    a:hover { text-decoration:underline; }
+    h1, h2 { color:#004080; }
+    h1 { font-size:3em; margin:10px 0; }
+    h2 { margin-bottom:15px; border-bottom:2px solid #004080; padding-bottom:5px; }
+
+    header { background:#004080; color:white; text-align:center; padding:60px 20px; position:relative; }
+    header img { width:150px; height:150px; border-radius:50%; border:3px solid white; margin-bottom:15px; }
+
+    section { max-width:900px; margin:40px auto; padding:20px; background:white; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); }
+    ul { list-style:none; padding-left:0; }
+    li { margin-bottom:8px; }
+
+    footer { text-align:center; padding:20px; background:#222; color:white; }
+
+    .btn { display:inline-block; padding:10px 20px; margin:5px; background:#004080; color:white; border-radius:5px; transition:0.3s; }
+    .btn:hover { background:#0066cc; }
+
+    /* Projets */
+    .projets { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .carte { background:white; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); width:250px; text-align:center; }
+    .carte img { width:100%; border-radius:5px; }
+</style>
 </head>
 <body>
-  <h1>Bienvenue sur mon portfolio</h1>
-  <p>Je suis Moussa, étudiant en Master Réseaux & Télécoms.</p>
+
+<header>
+    <img src="moussa-photo.jpg" alt="Moussa Sow">
+    <h1>Moussa Sow</h1>
+    <p>Dakar - Rufisque, Sénégal</p>
+    <p>
+        <a href="mailto:sow49986@gmail.com" class="btn">Email</a>
+        <a href="https://www.linkedin.com/in/moussa-sow-60426a379" class="btn">LinkedIn</a>
+        <a href="https://github.com/SHERLOCKSOW" class="btn">GitHub</a>
+        <a href="CV-MoussaSow.pdf" class="btn" target="_blank">Télécharger mon CV</a>
+    </p>
+</header>
+
+<section>
+    <h2>À propos de moi</h2>
+    <p>Étudiant en Master 1 Systèmes, Réseaux et Télécommunications à l’École Supérieure Polytechnique, passionné par la cybersécurité et le cloud. Titulaire d’une licence en Mathématiques après deux années de classes préparatoires en Mathématiques, Physique et Informatique. Je combine rigueur scientifique et compétences techniques pour concevoir et gérer des projets dans les réseaux et systèmes informatiques.</p>
+</section>
+
+<section>
+    <h2>Certifications</h2>
+    <ul>
+        <li>Cisco CCNA (200-301) – Décembre 2025</li>
+        <li>CompTIA Security+ (SY0-701) – Décembre 2025</li>
+        <li>AWS Certified Cloud Practitioner – Décembre 2025</li>
+        <li>Microsoft Azure Fundamentals (AZ-900) – En cours</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Compétences Techniques</h2>
+    <ul>
+        <li><strong>Réseaux :</strong> TCP/IP, VLAN, OSPF, BGP, NAT, ACL, Cisco IOS, GNS3, Packet Tracer, Wireshark, pfSense</li>
+        <li><strong>Cybersécurité :</strong> Firewall, VPN IPsec/SSL, IDS/IPS, Nmap, Metasploit, durcissement Linux/Windows</li>
+        <li><strong>Cloud :</strong> AWS (EC2, S3, VPC, IAM), Azure (VNet, NSG, VM), Docker, Terraform</li>
+        <li><strong>Systèmes :</strong> Linux (Debian/RedHat), Windows Server (AD, GPO, DNS, DHCP)</li>
+        <li><strong>Autres :</strong> Python, Bash, R, Git, Power BI, Excel Avancé</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Expériences & Projets</h2>
+    <ul>
+        <li><strong>Responsable Informatique – Multiservice Le Binaire MB01 (2022–2025)</strong> : Administration LAN/WAN (30 postes), routeurs/switchs Cisco, firewall pfSense, VPN site-to-site, monitoring Wireshark, gestion incidents cybersécurité</li>
+        <li><strong>Déploiement LAN multi-VLAN & Routage Dynamique (ESP – 2025)</strong> : OSPF/EIGRP, NAT, ACL, haute disponibilité</li>
+        <li><strong>Laboratoire Cybersécurité Offensive/Défensive (ESP – 2025)</strong> : Nmap, Metasploit, pfSense, VPN IPsec, analyse Wireshark</li>
+        <li><strong>Assistant pédagogique bénévole – USSEIN (2023–2024)</strong> : Tutorat maths (+15% moyenne étudiants)</li>
+        <li><strong>Robot autonome Arduino & Data Governance Python/R (2023–en cours)</strong></li>
+    </ul>
+</section>
+
+<section>
+    <h2>Projets Académiques & Techniques</h2>
+    <div class="projets">
+        <div class="carte">
+            <img src="heat-equation.png" alt="Simulation de l'équation de la chaleur">
+            <h3>Simulation de l'équation de la chaleur</h3>
+            <p>Projet académique : résolution de l'équation de la chaleur en 1D (FTCS)</p>
+        </div>
+
+        <div class="carte">
+            <img src="sudoku.png" alt="Jeu interactif Sudoku">
+            <h3>Jeu interactif Sudoku</h3>
+            <p>Projet technique : création d'un jeu interactif Sudoku en Python/Colab</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Langues & Engagements</h2>
+    <p><strong>Langues :</strong> Français (excellent), Anglais (courant technique), Japonais (intermédiaire), Wolof/Peulh (natif)</p>
+    <p><strong>Engagements :</strong> Président Club d’Échecs USSEIN, Reboisement 100+ arbres, Santé mentale étudiante</p>
+    <p><strong>Passions :</strong> Cybersécurité éthique, IA, culture japonaise, sport</p>
+</section>
+
+<footer>
+    © 2025 Moussa Sow | Portfolio
+</footer>
+
 </body>
 </html>
-
